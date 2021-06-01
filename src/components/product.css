@@ -1,0 +1,26 @@
+.product {
+  display: inline-block;
+  border: 1px solid lightgray;
+  width: 280;
+  height: 330px;
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-info {
+    margin-bottom: 3rem;
+    background-color: rgb(147, 147, 224);
+    border: rgb(147, 147, 224);
+    color: white;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .product {
+    width: 100%;
+  }
+}
