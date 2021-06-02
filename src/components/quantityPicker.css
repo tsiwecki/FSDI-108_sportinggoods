@@ -4,8 +4,15 @@
     padding: 30px;    
 }
 
-.btn-primary {
+.btn-primary-minus{
     background-color: rgb(147, 147, 224);
     border: rgb(147, 147, 224);
+    margin-right: .5rem;
+}
+
+.btn-primary-add{
+    background-color: rgb(147, 147, 224);
+    border: rgb(147, 147, 224);
+    margin-left: .5rem;
 }
 

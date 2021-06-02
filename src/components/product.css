@@ -1,11 +1,22 @@
+
+
 .product {
   display: inline-block;
-  border: 1px solid lightgray;
-  width: 280;
-  height: 330px;
+  width: 550px;
+  border: 1px solid rgb(121, 115, 115);
+  width: 300;
+  height: 350px;
   margin-right: 10px;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+
+.product h5 {
+  flex-grow: 1;
+}
+
+.product label {
+  flex-grow: 1;
 }
 
 .btn-info {
@@ -15,12 +26,11 @@
     color: white;
 }
 
-
-
-
-
-@media (max-width: 768px) {
-  .product {
-    width: 100%;
-  }
+.product img {
+  width: 10rem;
+  height: 10rem;
+  
 }
+
+
+

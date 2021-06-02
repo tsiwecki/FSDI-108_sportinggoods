@@ -6,22 +6,23 @@ class QuantityPicker extends Component {
     quantity: 1,
     name: "Thadeus",
   };
-  
+
   render() {
     return (
       <div className="qp-page">        
         <button
           onClick={this.decreaseQuantity}
-          className="btn btn-primary">
+          className="btn btn-primary-minus">
           
           -
         </button>
+        
 
         <label>{this.state.quantity}</label>       
         
         <button
           onClick={this.increaseQuantity}
-          className="btn btn-primary">
+          className="btn btn-primary-add">
           
           +
         </button>
