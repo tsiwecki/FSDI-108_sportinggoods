@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './navBar.css';
 
+
 class NavBar extends Component {
   state = {};
   render() {
@@ -8,7 +9,7 @@ class NavBar extends Component {
 
       <nav className="navbar navbar-expand-lg navBar-page ">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/#">Siwecki's Sporting Goods</a>
+          <a className="navbar-brand" href="/info.jsx">Siwecki's Sporting Goods</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -17,7 +18,7 @@ class NavBar extends Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-1 mp-2 mb-lg-0">
             <li className="nav-item">
-              <a className="navBar-link active" aria-current="page" href="/#">Home</a>
+              <a className="navBar-link active" aria-current="page" href="./home.jsx">Home</a>
             </li>
            
             <li className="nav-item">
@@ -25,7 +26,7 @@ class NavBar extends Component {
             </li>
             <li className="nav-item dropdown">
               <a className="navBar-link dropdown-toggle" href="/#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+                Menu
              </a>
             </li>
           </ul>

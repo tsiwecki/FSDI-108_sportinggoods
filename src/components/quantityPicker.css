@@ -6,13 +6,25 @@
 
 .btn-primary-minus{
     background-color: rgb(147, 147, 224);
+    color:white;
     border: rgb(147, 147, 224);
     margin-right: .5rem;
 }
 
+.btn-primary-minus:hover{
+    background-color: #09d8f3; 
+    color:black;
+}
+
 .btn-primary-add{
     background-color: rgb(147, 147, 224);
+    color: white;
     border: rgb(147, 147, 224);
     margin-left: .5rem;
+}
+
+.btn-primary-add:hover{
+    background-color: #09d8f3; 
+    color:black;
 }
 
