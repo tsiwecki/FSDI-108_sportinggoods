@@ -4,7 +4,9 @@ import "./quantityPicker.css";
 class QuantityPicker extends Component {
   state = {
     quantity: 1,
+    name: "Thadeus",
   };
+  
   render() {
     return (
       <div className="qp-page">        

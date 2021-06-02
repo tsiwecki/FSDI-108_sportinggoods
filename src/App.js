@@ -1,10 +1,12 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import "font-awesome/css/font-awesome.min.css";
 
 import Footer from "./components/footer";
 import NavBar from "./components/navBar";
-import Catalog from "./components/catalog"
+import Catalog from "./components/catalog";
+
 
 function App() {
   return (
@@ -14,7 +16,6 @@ function App() {
       
      
       <Catalog></Catalog>
-
       
 
       <Footer></Footer>
