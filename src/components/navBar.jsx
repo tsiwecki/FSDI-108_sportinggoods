@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './navBar.css';
+import { Link } from "react-router-dom";
 
 
 class NavBar extends Component {
@@ -7,45 +8,43 @@ class NavBar extends Component {
   render() {
     return (
 
-      <nav className="navbar navbar-expand-lg navBar-page ">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/info.jsx">Siwecki's Sporting Goods</a>
+          <Link className="navbar-brand" to="/">Sporting Goods</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-        </div>
-  
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-1 mp-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="navBar-link active" aria-current="page" href="./home.jsx">Home</a>
-            </li>
-           
-            <li className="nav-item">
-              <a className="navBar-link" href="?#">Link</a>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="navBar-link dropdown-toggle" href="/#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Menu
-             </a>
-            </li>
-          </ul>
-      
-          
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="/#">Action</a></li>
-            <li><a className="dropdown-item" href="/#">Another action</a></li>
-            <li><hr className="dropdown-divider"></hr></li>
-            <li><a className="dropdown-item" href="/#">Something else here</a></li>
-                    
-            <li className="nav-item">
-              <a className="navBar-link disabled" href="/#" tabIndex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form className="d-flex">
-            <input className="form-control me-2" type="search" placeholder="" aria-label="Search"></input>
-            <button className="btn btn-outline-search" type="submit">Search</button>
-          </form>
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/catalog">Shop</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">About</Link>
+              </li>
+              <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </Link>
+              </li>
+            </ul>
+              
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><Link className="dropdown-item" to="#">Action</Link></li>
+                  <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                  <li><hr className="dropdown-divider"></hr></li>
+                    <li><Link className="dropdown-item" to="#">Something else here</Link></li>
+                </ul>
+                  
+              <form className="d-flex">
+                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
+                  <button className="btn btn-outline-search" type="submit">Search</button>
+              </form>
+            </div>
         </div>
       </nav>
     );

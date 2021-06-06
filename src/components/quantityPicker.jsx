@@ -4,40 +4,50 @@ import "./quantityPicker.css";
 class QuantityPicker extends Component {
   state = {
     quantity: 1,
-    name: "Thadeus",
-  };
+    };
 
   render() {
     return (
-      <div className="qp-page">        
-        <button
+      <div className="qnty-page">        
+        
+        <div className="btn-group"><button
           onClick={this.decreaseQuantity}
-          className="btn btn-primary-minus">
-          
+          className="btn btn-primary-minus">          
           -
         </button>
         
 
-        <label>{this.state.quantity}</label>       
+        <label className="qnt">{this.state.quantity}</label>       
         
         <button
           onClick={this.increaseQuantity}
-          className="btn btn-primary-add">
-          
+          className="btn btn-primary-add">          
           +
         </button>
+
+        <button className="btn btn-sm btn-info">
+          <i className="fa fa-cart-plus" aria-hidden="true"></i>
+          Add
+        </button>
+        </div>
 
       </div>
     );
   }
 
   increaseQuantity = () => {
-    this.setState({ quantity: this.state.quantity + 1 }); // valid way of changing the state
+    let qnty = this.state.quantity + 1;
+    this.setState({ quantity: qnty }); // valid way of changing the state
+    
+    this.props.onQuanityChange(qnty);
   };
 
   decreaseQuantity = () => {
-    if (this.state.quantity > 1) {
-      this.setState({ quantity: this.state.quantity - 1 });
+    var qnty = this.state.quantity - 1;
+    if (qnty > 0) {
+      this.setState({ quantity: qnty });
+
+      this.props.OnQuantityChange(qnty);
       }
     };
   }

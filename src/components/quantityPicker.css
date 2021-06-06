@@ -1,30 +1,31 @@
 
  
-.qp-page { 
-    padding: 30px;    
+.btn-group button {
+    font-size: 13px;
+    background-color: rgb(147, 147, 224); 
+    border: 1px rgb(147, 147, 224); 
+    color: white; 
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;  
+    margin: 2px 2px;  
+    cursor: pointer; 
+  }    
+  
+  .btn-group button:hover {
+    background-color: #09d8f3;
+  }
+
+  .btn-primary-minus{
+    margin-right: 3rem;
+}
+ 
+  .btn-primary-add{
+    margin-left: 3rem;
 }
 
-.btn-primary-minus{
-    background-color: rgb(147, 147, 224);
-    color:white;
-    border: rgb(147, 147, 224);
-    margin-right: .5rem;
+.fa-cart-plus {
+    margin-left:1px;
 }
 
-.btn-primary-minus:hover{
-    background-color: #09d8f3; 
-    color:black;
-}
-
-.btn-primary-add{
-    background-color: rgb(147, 147, 224);
-    color: white;
-    border: rgb(147, 147, 224);
-    margin-left: .5rem;
-}
-
-.btn-primary-add:hover{
-    background-color: #09d8f3; 
-    color:black;
-}
-
+  

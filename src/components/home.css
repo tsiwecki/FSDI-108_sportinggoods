@@ -1,1 +1,19 @@
 
+.display-4{
+    background-color: rgb(241, 175, 53);
+    font-size: 3rem;
+}
+
+.lead1 {
+    background-color: rgb(31, 41, 133);
+    color:white;
+    font-size: 1.5rem;
+    text-align: center;    
+}
+
+.clear {
+    background-color: black;
+    color: yellow;
+    text-align: left;
+    font-size: 2.4rem;
+}
