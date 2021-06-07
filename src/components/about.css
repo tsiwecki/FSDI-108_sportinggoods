@@ -1,0 +1,18 @@
+
+.img {
+    
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.text h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    font-weight: 10rem;
+    color: rgb(255, 8, 234);
+    position: absolute;
+    top: 10%; 
+    text-align: center;
+    width: 100%; 
+    }
