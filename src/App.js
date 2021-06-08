@@ -9,6 +9,7 @@ import Catalog from "./components/catalog";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/home";
 import About from "./components/about";
+import Admin from "./components/admin";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" exact component={Home}></Route>
           <Route path="/about" exact component={About}></Route>          
           <Route path="/catalog" exact component={Catalog}></Route>
+          <Route path="/admin" exact component={Admin}></Route>
         </Switch>
 
         <Footer></Footer>

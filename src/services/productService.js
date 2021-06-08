@@ -1,3 +1,5 @@
+import axios from "axios";
+
 var data = [
     {
         id: "TD590001",
@@ -130,15 +132,38 @@ var data = [
 
 ];
 
+/**
+ * Server endpoint and functionality
+ * 
+ * GET
+ * /api/products  => get everyone's products
+ * /api/products/<yourName>  -> get yours products
+ * 
+ * POST
+ * /api/products => save products onto the DB
+ * 
+ * DELETE
+ * /api/products/clear/<yourName> => delete your prods from DB **/
+ 
+
 class ProductService {
-    getCatalog() {
-        //ToDo: logic to connect to server and retrieve the catalog
-        return data;
+    serverUrl = "https://fsdiapi.azurewebsites.net";
+
+    async getCatalog() {
+        // connect to server and retrieve the catalog
+        let response = await axios.get(this.serverUrl + "/api/products/thadSiwecki");
+        return response.data;
     }
 
-    getOffers()  {}
-
-    getProductDetails()  {}
+    async seedData() {
+        // send data from the array on thee yop to the server
+    
+        for(let i=0; i < data.length; i++) {
+            let prod = data[i];
+            prod.name = "thadSiwecki";        
+            await axios.post(this.serverUrl + "/api/products", prod);
+        }
+    }
  }
 
 export default ProductService;
