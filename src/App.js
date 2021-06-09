@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/home";
 import About from "./components/about";
 import Admin from "./components/admin";
+import learnMore from "./components/learnMore";
 
 function App() {
   return (
@@ -19,11 +20,13 @@ function App() {
          <NavBar></NavBar>
        
 
+      
         <Switch>
           <Route path="/" exact component={Home}></Route>
           <Route path="/about" exact component={About}></Route>          
           <Route path="/catalog" exact component={Catalog}></Route>
           <Route path="/admin" exact component={Admin}></Route>
+          <Route path="/learnMore" exact component={learnMore}></Route>
         </Switch>
 
         <Footer></Footer>

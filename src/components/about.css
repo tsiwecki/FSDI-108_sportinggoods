@@ -1,15 +1,31 @@
-.img {
-  background-size: cover;
-  background-repeat: no-repeat;
- }
+
 
 .text h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 4rem;
   font-weight: 10rem;
-  color: rgb(255, 8, 234);
+  color: black;
   position: absolute;
   top: 10%;
   text-align: center;
   width: 100%;
+}
+
+.jumbotron h1{
+  font-size: 3rem;
+  font-weight: 10rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+  
+}
+
+.jumbotron p{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.lead {
+  text-align: center;
+  margin-top: 2rem;
 }

@@ -1,31 +1,50 @@
 
+
  
-.btn-group button {
-    font-size: 13px;
-    background-color: rgb(147, 147, 224); 
-    border: 1px rgb(147, 147, 224); 
-    color: white; 
-    padding: 10px 20px;
-    text-align: center;
-    display: inline-block;  
-    margin: 2px 2px;  
+.btn-group {
+    font-size: 13px;     
+    position: relative;
+    display: inline-block;      
     cursor: pointer; 
   }    
   
-  .btn-group button:hover {
-    background-color: #09d8f3;
-  }
+.minus{
+    margin-right: 1rem;
+    background-color: rgb(147, 147, 224);
+    color: white;    
+}
 
-  .btn-primary-minus{
-    margin-right: 3rem;
+.minus:hover {
+  background-color: rgb(143, 210, 255);
+  color: black;
+}
+
+.qnt {
+  color: black;
+  margin-right: 1rem;;
 }
  
-  .btn-primary-add{
-    margin-left: 3rem;
+.add{
+    margin-left: 5rem;
+    margin-left: 5rem;
+    background-color: rgb(147, 147, 224);
+    color: white;
 }
 
-.fa-cart-plus {
-    margin-left:1px;
+.add:hover {
+  background-color: rgb(143, 210, 255);
+  color: black;
 }
 
+.info {
+    margin-left:20px;
+    background-color: rgb(147, 147, 224);
+    color: white;
+    
+}
+
+.info:hover {
+  background-color: rgb(143, 210, 255);
+  color: black;
+}
   

@@ -1,5 +1,10 @@
 
+.catalog-page{
+    text-align: center;
+}
+
 .ml-1{
     background-color: #e7e7e7; color: black;
     border: solid .5px black;
+    
 }

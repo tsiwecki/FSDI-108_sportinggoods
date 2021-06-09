@@ -6,21 +6,23 @@ class About extends Component {
   render() {
     return (
       <div className="about-page">
-        <div className="img">
-          <img src="../FamilyCamping1.jpg" alt="family camping"></img>
+        <div className="camping">
+          <img src="../camping.jpg" alt="family camping"></img>
         </div>
 
         <div className="text">
           <h1>About us</h1>
         </div>
 
+        
         <div className="jumbotron">
           <h1 className="display-4">Company Overview</h1>
           <p className="lead">
             Siwecki's Sporting Goods is one of the nation's leading sporting
             goods and outdoor stores. With 199 stores and counting, we offer a
             broad assortment of quality hunting, fishing, and camping equipment
-            and gear, along with sports and leisure products, footwear, apparel
+            and gear, </p>
+            <p>along with sports and leisure products, footwear, apparel
             and much more.
           </p>
           <hr className="my-4"></hr>

@@ -2,6 +2,7 @@
 
 .product {
   display: inline-block;
+  text-align: center;
   width: 550px;
   border: 1px solid rgb(121, 115, 115);
   width: 300;
@@ -19,6 +20,7 @@
 
 .product label {
   flex-grow: 1;
+  text-align: center;
 }
 
 .btn-info {
@@ -31,7 +33,7 @@
 .product img {
   width: 10rem;
   height: 10rem;
-  
+    
 }
 
 
