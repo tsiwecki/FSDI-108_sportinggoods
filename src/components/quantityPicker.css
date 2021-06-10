@@ -36,15 +36,3 @@
   color: black;
 }
 
-.info {
-    margin-left:20px;
-    background-color: rgb(147, 147, 224);
-    color: white;
-    
-}
-
-.info:hover {
-  background-color: rgb(143, 210, 255);
-  color: black;
-}
-  

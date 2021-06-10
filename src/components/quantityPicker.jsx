@@ -26,10 +26,7 @@ class QuantityPicker extends Component {
             +
           </button>
 
-          <button className="btn btn-primary info">
-            <i className="fa fa-cart-plus" aria-hidden="true"></i>
-            Add
-          </button>
+         
         </div>
       </div>
     );
@@ -39,7 +36,7 @@ class QuantityPicker extends Component {
     let qnty = this.state.quantity + 1;
     this.setState({ quantity: qnty }); // valid way of changing the state
 
-    this.props.onQuanityChange(qnty);
+    this.props.onQuantityChange(qnty);
   };
 
   decreaseQuantity = () => {

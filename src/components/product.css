@@ -36,5 +36,20 @@
     
 }
 
+.info {
+  margin-left:0px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  background-color: rgb(147, 147, 224);
+  color: white;
+  
+}
+
+.info:hover {
+background-color: rgb(143, 210, 255);
+color: black;
+}
+
+
 
 

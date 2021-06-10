@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './navBar.css';
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 
 class NavBar extends Component {
@@ -36,11 +37,22 @@ class NavBar extends Component {
                   <li><hr className="dropdown-divider"></hr></li>
                     <li><Link className="dropdown-item" to="#">Something else here</Link></li>
                 </ul>
-                  
-              <form className="d-flex">
+               
+                <div className="d-flex">
+                <Link className="btn btn-outline-primary" to="/cart">
+                  <i className="fa fa-cart-plus mr-2"></i>
+                  View Cart
+                <span className="badge badge-secondary">{this.props.cartCount}</span>
+                </Link>
+
+              </div>
+              
+            
+            <form className="d-flex">
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-                  <button className="btn btn-outline-search" type="submit">Search</button>
-              </form>
+              <button className="btn btn-outline-search" type="submit">Search</button>
+            </form>
+
             </div>
         </div>
       </nav>
@@ -48,4 +60,11 @@ class NavBar extends Component {
   };
 }
 
-export default NavBar;
+// return an object mapping the sstate to props
+const mapStateToProps = (state) => {
+  return {
+    cartCount: state.length  // <--- will put the array in this.prop.cart
+  }
+};
+
+export default connect( mapStateToProps ,null)(NavBar);
